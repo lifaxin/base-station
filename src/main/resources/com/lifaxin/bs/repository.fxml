@@ -7,19 +7,19 @@
 
 <VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifaxin.bs.controller.RepositoryController">
    <children>
-      <HBox minHeight="40.0" prefHeight="40.0" prefWidth="600.0">
+      <HBox alignment="CENTER" minHeight="40.0" prefHeight="40.0" prefWidth="600.0">
          <children>
-            <TextField alignment="TOP_RIGHT" minHeight="32.0" HBox.hgrow="NEVER">
+            <TextField alignment="TOP_LEFT" minHeight="25.0" prefHeight="25.0" prefWidth="161.0" HBox.hgrow="NEVER">
                <HBox.margin>
                   <Insets left="5.0" top="5.0" />
                </HBox.margin>
             </TextField>
-            <Button minHeight="32.0" mnemonicParsing="false" text="搜索">
+            <Button alignment="CENTER" contentDisplay="RIGHT" minHeight="24.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="40.0" text="搜索">
                <HBox.margin>
                   <Insets left="5.0" top="5.0" />
                </HBox.margin>
             </Button>
-            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                 <image>
                     <Image url="@../../../images/repository/repository.png" />
                 </image>
@@ -28,6 +28,6 @@
                </HBox.margin>
             </ImageView>
          </children></HBox>
-      <ListView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <ListView fx:id="repositoryListView" prefHeight="375.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
    </children>
 </VBox>

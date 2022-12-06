@@ -28,7 +28,7 @@ public class BaseController {
         double screenWidth = Screen.getPrimary().getBounds().getWidth();
         double screenHeight = Screen.getPrimary().getBounds().getHeight();
         // 切换页面
-        AppUtils.redirect("repository", "插件库", screenWidth * 0.7, screenHeight * 0.7);
+        AppUtils.redirect("repository", "插件库", screenWidth * 0.7, screenHeight * 0.7, Boolean.FALSE);
     }
 
     /**

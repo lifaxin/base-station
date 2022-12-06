@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifaxin.bs.controller.PluginItemController">
+   <children>
+      <HBox fx:id="pluginItemBox" alignment="BOTTOM_RIGHT" prefHeight="80.0" prefWidth="1000.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <VBox fx:id="pluginDescBox" prefHeight="100.0" prefWidth="781.0">
+               <children>
+                  <Label fx:id="nameLabel">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="describeLabel" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" graphicTextGap="0.0" prefHeight="52.0" prefWidth="523.0" wrapText="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="80.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="operationBtn" alignment="BOTTOM_RIGHT" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" onMouseClicked="#doOperation"/>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

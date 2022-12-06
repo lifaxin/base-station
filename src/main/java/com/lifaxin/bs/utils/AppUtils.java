@@ -32,7 +32,7 @@ public class AppUtils {
         }
     }
 
-    public static void redirect(String fxml, String name, double screenWidth, double screenHeight) {
+    public static void redirect(String fxml, String name, double screenWidth, double screenHeight, boolean resizable) {
         // 构建幕布
         Stage newStage = new Stage();
         newStage.setTitle(name);
@@ -44,6 +44,7 @@ public class AppUtils {
             throw new RuntimeException(e);
         }
         newStage.setScene(newScene);
+        newStage.setResizable(resizable);
         newStage.show();
     }
 
