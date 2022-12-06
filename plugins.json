@@ -1,0 +1,10 @@
+[
+  {
+    "name": "文件复制",
+    "describe": "进行系统文件之间快速复制、移动操作，支持自动调度拷贝功能，使用[quartz]",
+    "url":"https://gitee.com/xwintop/x-FileCopy",
+    "fromName":"https://gitee.com/xwintop/x-FileCopy",
+    "from":"xwintop/xJavaFxTool",
+    "collectionType": "http"
+  }
+]
