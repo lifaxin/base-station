@@ -1,4 +1,4 @@
-package com.lifaxin.bs.constaints;
+package com.lifaxin.bs.common.constaints;
 
 /**
  * @author FaXin.Li

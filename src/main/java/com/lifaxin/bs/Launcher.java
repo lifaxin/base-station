@@ -1,6 +1,8 @@
 package com.lifaxin.bs;
 
+import com.lifaxin.bs.context.ComponentContext;
 import com.lifaxin.bs.utils.AppUtils;
+import com.lifaxin.bs.utils.PluginLoadUtils;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
@@ -18,12 +20,26 @@ public class Launcher extends Application {
         double screenWidth = Screen.getPrimary().getBounds().getWidth();
         double screenHeight = Screen.getPrimary().getBounds().getHeight();
         // 初始化设置
-        AppUtils.scene = new Scene(AppUtils.loadFXML("base"), screenWidth * 0.8, screenHeight * 0.8);
-        AppUtils.stage = stage;
-        AppUtils.stage.setScene(AppUtils.scene);
+        ComponentContext.scene = new Scene(AppUtils.loadFXML("main"), screenWidth * 0.8, screenHeight * 0.8);
+        ComponentContext.stage = stage;
+        ComponentContext.stage.setTitle("基站");
+        ComponentContext.stage.setScene(ComponentContext.scene);
         // 开启页面
-//        AppUtils.stage.initStyle(StageStyle.UNDECORATED);
-        AppUtils.stage.show();
+        ComponentContext.stage.initStyle(StageStyle.UNDECORATED);
+        ComponentContext.stage.show();
+        // 加载系统托盘处理
+
+
+
+
+
+
+
+
+
+        // 加载插件
+        String plugins = "E:\\personalspace\\demo\\target";
+//        PluginLoadUtils.instance.loadPlugin(plugins);
     }
 
     public static void main(String[] args) {

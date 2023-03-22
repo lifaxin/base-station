@@ -1,7 +1,6 @@
-package com.lifaxin.bs.constaints;
+package com.lifaxin.bs.common.constaints;
 
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * @author FaXin.Li

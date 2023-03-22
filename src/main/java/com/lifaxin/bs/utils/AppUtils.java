@@ -1,6 +1,7 @@
 package com.lifaxin.bs.utils;
 
 import com.lifaxin.bs.Launcher;
+import com.lifaxin.bs.context.ComponentContext;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,13 +21,12 @@ public class AppUtils {
     /**
      * 全局自定义场景
      */
-    public static Scene scene;
-    public static Stage stage;
+
 
 
     public static void forward(String fxml) {
         try {
-            scene.setRoot(loadFXML(fxml));
+            ComponentContext.scene.setRoot(loadFXML(fxml));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -54,6 +54,6 @@ public class AppUtils {
     }
 
     public static void minimize(){
-        stage.setIconified(true);
+        ComponentContext.stage.setIconified(true);
     }
 }

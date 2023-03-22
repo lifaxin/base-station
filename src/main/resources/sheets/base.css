@@ -1,0 +1,12 @@
+VBox {
+    -fx-background-color: white;
+}
+HBox {
+    -fx-background-color: white;
+}
+.topMenu {
+    -fx-background-color: #C9EEFF;
+}
+.topMenuItem {
+    -fx-background-color: #C9EEFF;
+}
