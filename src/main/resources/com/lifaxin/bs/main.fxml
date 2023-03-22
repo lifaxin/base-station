@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import io.github.palexdev.materialfx.controls.*?>
-<?import io.github.palexdev.materialfx.font.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import io.github.palexdev.materialfx.font.MFXFontIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifaxin.bs.controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifaxin.bs.controller.MainController">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -102,9 +106,16 @@
                         <Insets bottom="20.0" />
                      </padding>
                   </VBox>
-                  <MFXScrollPane prefWidth="200.0" thumbColor="WHITE" thumbHoverColor="WHITE" trackColor="WHITE">
+                  <MFXScrollPane hbarPolicy="NEVER" pannable="true" prefWidth="200.0" style="-fx-background-color: #eeeeee;" thumbColor="#eeeeee" thumbHoverColor="#eeeeee" trackColor="#eeeeee" viewOrder="1.0">
                      <content>
-                        <Button mnemonicParsing="false" text="Button" />
+                        <VBox fx:id="navBar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="190.0" spacing="5.0">
+                           <children>
+                              <MFXButton contentDisplay="TOP" depthLevel="LEVEL0" graphicTextGap="100.0" prefHeight="25.0" prefWidth="190.0" text="效率办公" textAlignment="CENTER" />
+                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="190.0" />
+                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="190.0" />
+                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="40.0" prefHeight="25.0" prefWidth="190.0" />
+                           </children>
+                        </VBox>
                      </content>
                   </MFXScrollPane>
                   <MFXScrollPane thumbColor="WHITE" thumbHoverColor="WHITE" trackColor="WHITE" HBox.hgrow="ALWAYS" />
