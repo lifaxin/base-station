@@ -2,7 +2,8 @@ package com.lifaxin.bs;
 
 import com.lifaxin.bs.context.ComponentContext;
 import com.lifaxin.bs.utils.AppUtils;
-import com.lifaxin.bs.utils.PluginLoadUtils;
+import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
+import io.github.palexdev.materialfx.css.themes.Themes;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
@@ -16,6 +17,7 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
         // 获取屏幕大小
         double screenWidth = Screen.getPrimary().getBounds().getWidth();
         double screenHeight = Screen.getPrimary().getBounds().getHeight();
@@ -27,6 +29,8 @@ public class Launcher extends Application {
         // 开启页面
         ComponentContext.stage.initStyle(StageStyle.UNDECORATED);
         ComponentContext.stage.show();
+        // 开启主题
+        MFXThemeManager.addOn(ComponentContext.scene, Themes.DEFAULT, Themes.LEGACY);
         // 加载系统托盘处理
 
 
