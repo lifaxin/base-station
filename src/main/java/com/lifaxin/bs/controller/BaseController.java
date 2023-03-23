@@ -34,8 +34,8 @@ public class BaseController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // 加载菜单
-        addTopMenu(topMenu, "插件库", "menu/PluginRepository.png", "", action -> { });
-        addTopMenu(topMenu, "提交插件", "menu/AddPlugin.png", "", action -> { });
+        addTopMenu(topMenu, "插件库", "menu/upload.png", "", action -> { });
+        addTopMenu(topMenu, "提交插件", "menu/add.png", "", action -> { });
         // 加载工具类
 
     }

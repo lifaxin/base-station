@@ -17,20 +17,20 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="30.0" prefWidth="1024.0" style="-fx-background-color: #82AAE3;">
+            <HBox prefHeight="30.0" prefWidth="1024.0" style="-fx-background-color: #62CDFF;">
                <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                  <HBox alignment="CENTER" prefHeight="40.0">
                      <children>
                         <Label text="基站" textAlignment="CENTER">
                            <graphic>
-                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@images/menu/PluginRepository.png" />
+                                    <Image url="@images/logo.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <font>
-                              <Font name="Microsoft YaHei" size="12.0" />
+                              <Font name="Microsoft YaHei" size="15.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="5.0" />
@@ -41,17 +41,17 @@
                      <children>
                         <MFXFontIcon description="mfx-minus-circle" onMouseClicked="#min" size="15.0">
                            <color>
-                              <Color red="0.05000000074505806" green="0.05000000074505806" blue="0.05000000074505806" />
+                              <Color red="0.9333333373069763" green="0.9333333373069763" blue="0.9333333373069763" />
                            </color>
                         </MFXFontIcon>
                         <MFXFontIcon description="mfx-circle-empty" layoutX="1024.0" layoutY="44.0" onMouseClicked="#max" size="15.0">
                            <color>
-                              <Color red="0.05098039284348488" green="0.05098039284348488" blue="0.05098039284348488" />
+                              <Color red="0.9333333373069763" green="0.9333333373069763" blue="0.9333333373069763" />
                            </color>
                         </MFXFontIcon>
                         <MFXFontIcon description="mfx-x-circle" layoutX="1024.0" layoutY="44.0" onMouseClicked="#close" size="15.0">
                            <color>
-                              <Color red="0.05098039284348488" green="0.05098039284348488" blue="0.05098039284348488" />
+                              <Color red="0.6666666865348816" green="0.46666666865348816" blue="1.0" />
                            </color>
                         </MFXFontIcon>
                      </children>
@@ -61,44 +61,47 @@
                   </HBox>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="edge-to-edge" VBox.vgrow="ALWAYS">
                <children>
                   <VBox alignment="TOP_CENTER" prefWidth="60.0" spacing="15.0" style="-fx-background-color: #eeeeee;">
                      <children>
                         <Label alignment="BOTTOM_CENTER" contentDisplay="TOP" text="添加插件" textAlignment="CENTER">
                            <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@images/menu/AddPlugin.png" />
+                                    <Image url="@images/menu/add.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <font>
-                              <Font name="Microsoft YaHei" size="12.0" />
+                              <Font name="Microsoft YaHei UI Light" size="10.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
                         </Label>
                         <Label alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="16.0" layoutY="90.0" text="提交插件" textAlignment="CENTER">
                            <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@images/menu/AddPlugin.png" />
+                                    <Image url="@images/menu/upload.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <font>
-                              <Font name="Microsoft YaHei" size="12.0" />
+                              <Font name="Microsoft YaHei Light" size="10.0" />
                            </font>
                         </Label>
                         <Label alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="16.0" layoutY="86.0" text="设置" textAlignment="CENTER">
                            <graphic>
-                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@images/menu/AddPlugin.png" />
+                                    <Image url="@images/menu/setting.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <font>
-                              <Font name="Microsoft YaHei" size="12.0" />
+                              <Font name="Microsoft YaHei UI Light" size="10.0" />
                            </font>
                         </Label>
                      </children>
@@ -106,19 +109,35 @@
                         <Insets bottom="20.0" />
                      </padding>
                   </VBox>
-                  <MFXScrollPane hbarPolicy="NEVER" pannable="true" prefWidth="200.0" style="-fx-background-color: #eeeeee;" thumbColor="#eeeeee" thumbHoverColor="#eeeeee" trackColor="#eeeeee" viewOrder="1.0">
-                     <content>
-                        <VBox fx:id="navBar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="190.0" spacing="5.0">
-                           <children>
-                              <MFXButton contentDisplay="TOP" depthLevel="LEVEL0" graphicTextGap="100.0" prefHeight="25.0" prefWidth="190.0" text="效率办公" textAlignment="CENTER" />
-                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="190.0" />
-                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="190.0" />
-                              <MFXButton depthLevel="LEVEL1" layoutX="10.0" layoutY="40.0" prefHeight="25.0" prefWidth="190.0" />
-                           </children>
-                        </VBox>
-                     </content>
-                  </MFXScrollPane>
-                  <MFXScrollPane thumbColor="WHITE" thumbHoverColor="WHITE" trackColor="WHITE" HBox.hgrow="ALWAYS" />
+                  <VBox fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <MFXButton alignment="CENTER" contentDisplay="RIGHT" depthLevel="LEVEL3" ellipsisString="" graphicTextGap="130.0" lineSpacing="10.0" prefWidth="200.0" rippleAnimateShadow="true" text="生产效率" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <MFXFontIcon boundsType="VISUAL" description="mfx-chevron-right" fontSmoothingType="LCD" textAlignment="JUSTIFY" textOrigin="TOP" />
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="12.0" />
+                           </font>
+                        </MFXButton>
+                        <MFXButton alignment="CENTER" contentDisplay="RIGHT" depthLevel="LEVEL3" ellipsisString="" graphicTextGap="116.0" layoutX="10.0" layoutY="20.0" lineSpacing="10.0" prefWidth="200.0" rippleAnimateShadow="true" text="生产效率呀" textAlignment="CENTER">
+                           <graphic>
+                              <MFXFontIcon boundsType="VISUAL" description="mfx-chevron-right" fontSmoothingType="LCD" textAlignment="JUSTIFY" textOrigin="TOP" />
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="12.0" />
+                           </font>
+                        </MFXButton>
+                        <MFXButton alignment="CENTER" contentDisplay="RIGHT" depthLevel="LEVEL3" ellipsisString="" graphicTextGap="102.0" layoutX="10.0" layoutY="45.0" lineSpacing="10.0" prefWidth="200.0" rippleAnimateBackground="false" rippleAnimateShadow="true" text="生产效率呀呀" textAlignment="CENTER">
+                           <graphic>
+                              <MFXFontIcon boundsType="VISUAL" description="mfx-chevron-right" fontSmoothingType="LCD" textAlignment="JUSTIFY" textOrigin="TOP" />
+                           </graphic>
+                        </MFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <MFXScrollPane style="-fx-background-color: #eeeeee;" HBox.hgrow="SOMETIMES" />
                </children></HBox>
          </children>
       </VBox>
