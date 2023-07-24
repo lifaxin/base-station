@@ -1,8 +1,0 @@
-.side-bar-btn :hover {
-    -fx-effect: innershadow(gaussian, #97DEFF, 10, 1.0, 0, 0);
-    -fx-effect: dropshadow(gaussian, #97DEFF, 1, 0.2, 0, 0);
-}
-
-.function-btn:hover {
-    -fx-effect: dropshadow(gaussian, #97DEFF, 2, 1, 0, 0);
-}

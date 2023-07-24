@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../../../sheets/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifaxin.bs.controller.MainController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0" styleClass="edge-to-edge" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="768.0" prefWidth="60.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" prefHeight="738.0" prefWidth="60.0" spacing="15.0" styleClass="vbox-top-border">
+                                    <padding>
+                                        <Insets bottom="20.0" />
+                                    </padding>
+                                    <children>
+                                        <AnchorPane layoutX="10.0" layoutY="20.0" prefHeight="60.0" prefWidth="60.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="49.0" prefWidth="55.0" text="插件列表">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/menu/upload.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane prefHeight="60.0" prefWidth="60.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="49.0" prefWidth="55.0" text="工具市场">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/menu/add.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </AnchorPane>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="BOTTOM_CENTER" prefHeight="478.0" prefWidth="60.0">
+                                    <children>
+                                        <AnchorPane prefHeight="41.0" prefWidth="60.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="TOP" layoutY="-11.0" prefHeight="60.0" prefWidth="60.0" text="系统设置">
+                                                    <graphic>
+                                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/menu/setting.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox fx:id="accordionContainer" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" styleClass="vbox-left-accordion" />
+                  <VBox fx:id="contentContainer" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox-left-accordion" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            </children>
+            <effect>
+                <Glow />
+            </effect>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+/* custom-accordion.css */
+.bs-accordion {
+    /* 设置背景颜色和边框 */
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+
+.bs-menu-item{
+    /* 设置标题栏样式 */
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-style: none
+}
+
+
+.bs-menu-item .title{
+    /* 设置标题栏样式 */
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-style: none
+}
+
+.bs-menu-item .content{
+    /* 设置标题栏样式 */
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-style: none
+}
+
+.bs-menu-item-content {
+    /* 设置内容区样式 */
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-radius: 0;
+    -fx-border-width: 0!important;
+    -fx-border-style: none
+}
+
+.bs-menu-item-btn {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #eee;
+}
+
+.bs-menu-item-btn :hover{
+    -fx-background-color: #83caec;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #eee;
+}
+
+.bs-menu-item-btn :pressed{
+    -fx-background-color: #74c5ec;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #eee;
+}
