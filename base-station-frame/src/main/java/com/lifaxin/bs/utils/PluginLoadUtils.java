@@ -69,18 +69,14 @@ public class PluginLoadUtils {
             return pluginList;
         }
         // 获取插件信息
-        Arrays.asList(jarFiles).forEach(file -> {
-            // 查询Jar包内子类
-            Optional.of(scanSubClass(file)).ifPresent(plugins -> {
-                plugins.forEach(item -> {
-                    for (int i = 0; i < 3; i++){
-                        PluginService pluginService = loadPlugin(file, item);
-                        PluginEntity plugin = new PluginEntity(getUrlClassLoader(file.getAbsoluteFile()), pluginService);
-                        pluginList.add(plugin);
-                    }
-                });
-            });
-        });
+        // 查询Jar包内子类
+        for (File file : jarFiles) {
+            Optional.of(scanSubClass(file)).ifPresent(plugins -> plugins.forEach(item -> {
+                PluginService pluginService = loadPlugin(file, item);
+                PluginEntity plugin = new PluginEntity(getUrlClassLoader(file.getAbsoluteFile()), pluginService);
+                pluginList.add(plugin);
+            }));
+        }
         return pluginList;
     }
 
